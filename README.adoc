@@ -1,8 +1,0 @@
-# JSL TextMate Bundle
-
-Syntax highlight for all TextMate compatible IDE.
-
-
-## Installation
-
-Installation for link:doc/install-idea.adoc[JetBrains products (Idea)]
