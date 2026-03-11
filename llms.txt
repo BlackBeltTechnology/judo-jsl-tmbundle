@@ -1,0 +1,30 @@
+# JUDO JSL TextMate Bundle
+
+> TextMate grammar-based syntax highlighting for the JUDO Specific Language (JSL), packaged as a Maven JAR artifact for editor integrations and JUDO tooling.
+
+Key facts:
+- Language: XML plist (TextMate grammar format), built with Java 11 / Maven 3.9.4+
+- Single-module Maven project — no Java source code, the deliverable is one grammar file
+- Provides syntax highlighting for JSL: the DSL used across the JUDO platform for data models, transfer objects, UI views, and actor-based access control
+- Compatible with VS Code, JetBrains IDEs, Sublime Text, and all TextMate-aware editors
+- Published to both JUDO Nexus and Maven Central
+- License: Eclipse Public License 2.0 (EPL-2.0)
+
+## Docs
+
+- [README.md](README.md): Project overview, grammar architecture, build instructions, and installation guide
+- [AGENTS.md](AGENTS.md): Developer documentation with directory structure, build commands, and coding conventions
+- [CONTRIBUTING.md](CONTRIBUTING.md): How to submit issues and pull requests
+- [doc/install-idea.md](doc/install-idea.md): Step-by-step JetBrains IDE installation guide
+
+## Core Files
+
+- [Syntaxes/jsl.tmLanguage](Syntaxes/jsl.tmLanguage): Core grammar definition — regex-based syntax rules for all JSL constructs (entity, transfer, view, row, actor, enum blocks)
+- [info.plist](info.plist): TextMate bundle metadata (name: "JSL", UUID)
+- [pom.xml](pom.xml): Maven build configuration with CI-friendly `${revision}` versioning and deployment profiles
+
+## Optional
+
+- [.github/CIFLOW.md](.github/CIFLOW.md): CI/CD flow documentation — branching, versioning, and pipeline details
+- [.github/workflows/build.yml](.github/workflows/build.yml): Main CI pipeline — builds, deploys, tags, and releases
+- [LICENSE.txt](LICENSE.txt): EPL-2.0 license text
